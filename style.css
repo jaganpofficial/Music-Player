@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #361c30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.music-player {
+    background: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #594a90;
+    box-shadow: 0 5px 10px rgba(26, 87, 255, 0.22);
+}
+
+.img-song {
+    width: 220px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 60px rgba(26, 87, 255, 0.22);;
+}
+
+.music-player h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p {
+    font-size: 15px;
+    color: #333;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #23a79e;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background:  #23a79e;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(26, 87, 255, 0.22);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #23a79e;
+    box-shadow: 0 10px 20px rgba(26, 87, 255, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+	transform: scale(1.5);
+	background-color: #23a79e;
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+
+.music-player {
+    text-align: center;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .img-song {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
